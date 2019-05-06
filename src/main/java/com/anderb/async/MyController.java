@@ -42,6 +42,7 @@ public class MyController {
         List<Long> ids = new ArrayList<>();
         ids.add(5000L);
         ids.add(3000L);
+        ids.add(1000L);
         ids.add(4000L);
         service.runReports(ids).thenAccept(list -> {
             log.info("Result2: " + list);
